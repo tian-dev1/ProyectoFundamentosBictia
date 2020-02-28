@@ -1,0 +1,50 @@
+aceptar colaboración al repositorio git 
+tener git instalado 
+configurar por primera vez 
+	git config --global user.name "CristianCamilo"
+	git config --global user.email tiancamilo59@gmail.com
+
+GitHub
+Manejo de ramas
+master: (Rama exclusiva para el proyecto finalizado ya para presentación)
+develop: (Rama que alojara todos los desarrollos estables del proyecto y documentación y wikis (Oscar))
+	NavbarPrincipal: (Para el contactenos y la gestión de usuario (Camilo))
+	Footer: (Para datos de la aplicación y contactos (Aleja))
+
+Las siguientes ramas poseen su respectivo .html .css .js y su carpeta de img
+user-page (Rama exclusiva para el desarrollo de la página de perfil de usuario (Jorge) y logica (Camilo y Nicolas) )
+videos-page (Rama exclusiva para el desarrollo de la página de visualización de videos y buscador (Cristian David))
+principal-page (Rama exclusiva para el desarrollo de la página principal (Visualización por regiones) (Cristian David))
+home-page (Rama exclusiva para el desarrollo de la página inicial de la web (briggite) modals y logica (Camilo y Nicolas ))
+
+
+git clone https://github.com/tiancamilo01/ProyectoFundamentosBictia.git
+(Nos dejara por defecto en la rama master "Rama master no se toca")
+
+Ver el estado de nuestro repositorio 
+	git status
+
+Comando para cambiarnos de rama 
+	git checkout <nombre rama en la que vamos a trabajar>
+
+Despues de hacer nuestros cambios podemos agregarlos a nuestro repositorio local con el comando
+	git add <nombre archivo> si son varios archivos se agregan con <.>
+
+Ver el estado de nuestro repositorio 
+	git status
+
+Realizar comentario de los cambios realizados
+	git commit -m "<Descripcion detallada de los cambios realizados>"
+
+Visualizar commits de mi rama actual 
+	git log
+
+Subir cambios al repositorio remoto 
+	git push origin <nombre de la rama en la que estamos trabajando>
+
+Bajar cambios del repositorio remoto a nuestro repositorio local
+	git pull origin <nombre de la rama de la que queremos bajar cambios>
+
+
+
+Documentación: https://medium.com/laboratoria-how-to/describiendo-el-flujo-de-trabajo-en-git-ede2eee5b589
