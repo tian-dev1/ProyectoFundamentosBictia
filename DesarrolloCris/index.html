@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> regiones </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" container="width=device-width,initial-scale=1.0">
+        <!-- ANIMACION LOGO PASEO DE OLLA -->
+        <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+        <link rel="stylesheet" type="text/css" href="csshake.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+    </head>
+    <body>
+            <!-- Container principal de la página -->
+            <div class="container">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-principal">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <img src="img/LogoFontWhite.svg" height="80px" alt="Logo paseo de olla">
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active" style="margin-right: 20px;">
+                                    <a class="nav-link" href="#"><img class="icono" src="img/homeIcon.png" height="20px" alt="Icono home">Bienvenido NombreUsuario <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./user_page.html"><img class="icono" src="img/userCardIcon.png" height="20px" alt="Icono home">Mi perfil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><img class="icono" src="img/signOffIcon.png" height="20px" alt="Icono home">Cerrar sesíon</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> <img class="icono" src="img/phoneIcon.png" height="20px" alt="Icono home">Contactenos</a>
+                                </li>
+
+                            </ul>
+                        </form>
+                    </div>
+                </nav>
+            </div>	
+        <div id="containerMainRegiones">
+            <div id="ContainerFirstpage">
+                <div id="videoPrincipal">
+                	<img id="vidPrincipalOlla" src="" alt="">
+                </div>
+                <aside id="izquierdo">
+                	<div class="botonesRegiones" id="amazonas"onmouseenter="escojerRegion(0);">aamazonia</div>
+                	<div class="botonesRegiones" id="andina"onmouseenter="escojerRegion(1);"></div>
+                	<div class="botonesRegiones" id="caribe"onmouseenter="escojerRegion(2);"></div>
+                	<div class="botonesRegiones" id="insular"onmouseenter="escojerRegion(3);"></div>
+                	<div class="botonesRegiones" id="orinoquia"onmouseenter="escojerRegion(4);"></div>
+                	<div class="botonesRegiones" id="pacifico"onmouseenter="escojerRegion(5);"></div>
+                </aside>
+                <aside id="derecho">
+                	<div id="containerCazerola">
+                		
+                    </div>	
+                    <div id="containerMenu">
+                    	<div id="tituloRegion">
+                    		<p> Colombia </p>
+                        </div>	
+                        <div id="comidaRegion">
+                        	<p> Coolombia cuenta con 6 regiones y la variedad de comida es.......</p>
+                        	<button><a href="video.html">ver mas</a></button>
+                        </div>		
+                    </div> 
+                </aside>
+            </div>
+        </div>
+        <footer>
+              <!-- CONTAINER IMÁGENES -->
+              <div id="container" class="shake-slow">
+               <img id="imagenlogo"class="imagenfooter"src="img/logo.png" alt="" >
+               <img id="imagenisotipo" class="imagenfooter" src="img/isotipo.png" alt="">
+              </div>
+              <!-- FINALIZA CONTAINER IMÁGENES-->
+              <!-- CONTAINER PRINCIPAL-->
+              <div id="containerPrincipal">
+              <!-- BARRA CONTACTENOS -->
+              <div id="contactenos">
+                 <p class="titulo">Contáctenos</p>
+                 <hr>
+                 <a class="textoiconos" href=""><ion-icon class="textoiconos"name="mail-outline"></ion-icon></ion-icon>info@paseo.com<br>
+                 <a class="textoiconos" href=""><ion-icon class="textoiconos" name="call-outline"></ion-icon> 314 567 8945</a><br>
+                 <a  class="textoiconos" href=""><ion-icon class="textoiconos" name="phone-portrait-outline"></ion-icon></ion-icon>314 567</a><br>
+                 <hr>
+                 <p class="titulo">Síguenos</p>
+                 <a class="textoiconos" href=""><ion-icon name="logo-instagram"></ion-icon> Instagram</a><br>
+                 <a class="textoiconos" href=""><ion-icon name="logo-facebook"></ion-icon> Facebook</a><br>
+              </div>
+               <!-- BARRA ACCESO RAPIDO -->
+              <div id="accesoRapido">
+                 <p class="titulo">Acceso Rápido</p>
+                 <hr>
+                 <p class="regiones">Región Andina</p>
+                 <p class="regiones">Región Caribe</p>
+                 <p class="regiones">Región Orinoquia</p>
+                 <p class="regiones">Región Pacífica</p>
+                 <p class="regiones">Región Amazoníca</p>
+                 </div>
+               <!-- BARRA PASEO DE OLLA  -->
+              <div id="paseoDeOlla">
+                   <p class="titulo">Paseo de Olla </p>
+                   <hr>
+                  <p class="descripcionPaseoDeOlla">Paseo de Olla es un portal creado con la
+                   finalidad de acercar <br>a nuestros usuarios
+                    a la gran variedad gastronómica que existe<br> en Colombia.
+                  </p>
+              </div>
+          </div>           
+        </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+    <script type="text/javascript" src="js/javaScript.js"></script>    
+    </body>
+</html>    

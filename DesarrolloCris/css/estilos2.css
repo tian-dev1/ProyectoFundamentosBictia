@@ -1,0 +1,118 @@
+
+body{
+	background-color: lightblue;
+}
+/* contendedor de los datos y las busqueda*/
+
+header{
+	background-color:white;
+	width : 100%;
+	height: 15%;
+	border-radius: 10px;
+	float:left;
+}	
+/* contiene a todos los elemenetos html, y se usa para poder implementar el sticky*/
+#container{
+	width: 100%;
+	height: 200%;
+	margin-left: 2%;
+	float: left;
+}
+
+/* contenedor del video en reproduccion grande*/
+#video-grande{
+	background-color: white;
+    width: 50%;
+    height: 35%;
+    margin-top: 5%;
+    margin-left: 3%;	
+    border-radius: 10px;
+    float:left;   
+}
+
+/* este css se usa para dejar un lado de la paguina estatico*/
+.videoGrande{
+	position: sticky;
+	top: 5%;
+}
+
+/* contenedor para el nombre, like y compartir*/
+#likeShare{
+    	background-color: white;
+        width: 50%;
+        height: 5%;
+        margin-top: 0.2%;
+        margin-left: 3%;
+        border-radius: 10px;
+        float: left;
+}
+
+/* informacion del video y artista*/
+#artista{
+		background-color: white;
+	    width: 50%;
+	    height: 15%;
+	    margin-top: 0.2%;
+	    margin-left: 3%;
+	    border-radius: 10px;
+	    float: left;
+}
+
+/* comentarios del video*/
+#comentarios{
+		background-color: white;
+	    width: 50%;
+	    height: 50%;
+	    margin-top: 0.2%;
+	    margin-left: 3%;
+	    border-radius: 10px;
+	    float: left;
+}
+/*contenedor de todas las peliculas pequeñas*/
+aside{
+	background-color: lightblue;
+	width: 40%;
+	height: 90%;
+	margin-top: 2%;
+	margin-right: 5%;
+	float:right;
+}
+
+/* contenedor pelicula pequeña y titulo, artista, calificacion y botones*/
+.containerImg{
+	background-color: white;
+	width: 90%;
+	height: 12%;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-radius: 10px;
+	float: left;
+}
+/* posicion de los videos pequeños*/
+.posicionFrame{
+	background-color: white;
+	width: 50%;
+	height: 100%;
+	float: left;
+    
+}
+/* datos de los videos pequeños*/
+.videoDatos{
+	background-color: white;
+    width: 40%;
+    height: 50%;
+    font-family: Arial;
+    font-size: 80%;
+    margin-left: 5%;
+    float: left;
+}
+
+button{
+	width: 50%;
+	height: 30%;
+	float:right;
+}
+
+
+
