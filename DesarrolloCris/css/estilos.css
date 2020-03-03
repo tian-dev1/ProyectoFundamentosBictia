@@ -1,10 +1,17 @@
-body{
-	width: 100%;
-	height: 1200px;
+body {
+    width: 100%;
+    height: 1200px;
 }
+
+
 /**************************************************************************************************************************/
+
+
 /*                                  estilo del nav de cristian camilo                                                      */
+
+
 /***************************************************************************************************************************/
+
 .navbar-principal {
     background-color: #191919 !important;
 }
@@ -14,272 +21,358 @@ body{
     padding-right: 5px;
 }
 
+
 /******************************************************************************************************************************/
+
+
 /*el css del container general de los videos y botones que muestra el video de regiones*/
-#containerMainRegiones{
+
+#containerMainRegiones {
     background-color: white;
-	width: 100%;
-	height: 60%;
-	margin-top: 8%;
-	float:left;
-}
-/* el css que modifica el container de la tarjeta y toda su estructura*/ 
-#ContainerFirstpage{
-	background-image:url("../img/fondo_container_menus3.png") ;
     width: 100%;
-	height: 100%;
-	float:left;	
+    height: 60%;
+    margin-top: 8%;
+    float: left;
 }
+
+
+/* el css que modifica el container de la tarjeta y toda su estructura*/
+
+#ContainerFirstpage {
+    background-image: url("../img/fondo_container_menus3.png");
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+
 /*este es el css del video principal*/
-#videoPrincipal{
-	background-image: url("../img/banner_01.png") ;
-	width: 85%;
+
+#videoPrincipal {
+    background-image: url("../img/banner_01.png");
+    width: 85%;
     height: 23%;
-	margin-top: 1.5%;
-	margin-left: 9%;
-	margin-right: 25%;
-	background-position: 0% 100%;
-	background-repeat: no-repeat;
-	background-attachment: scroll; /* posicion fija de la tasa*/
-	background-size: 100% 100%; /* tamaño de la imagen*/
-	/*background-color: #DE2345;*/
-	float:left;	
-
+    margin-top: 1.5%;
+    margin-left: 9%;
+    margin-right: 25%;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 100% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
+    float: left;
 }
+
+
 /*css del video principal, muy necesario*/
-#vidPrincipalOlla{
-	width: 50%;
-	height: 50%;
-	float:left;
-	border-radius: 10px;
 
+#vidPrincipalOlla {
+    width: 50%;
+    height: 50%;
+    float: left;
+    border-radius: 10px;
 }
+
 
 /* esta css es para las caracteristicas del contenedor de los botones que escojen la region*/
-#izquierdo{
+
+#izquierdo {
     width: 15%;
     height: 65%;
     margin-top: 1.5%;
     margin-left: 8%;
-    float:left;	
+    float: left;
 }
+
+
 /* este css es para las caracteristicas del contenedor de cada boton*/
-.botonesRegiones{
-	background-color: white;
-	width: 90%;
-	height: 15%;
-	margin-top:3%;
-	margin-left: 5%;
-	border-radius: 10px;
-	float:left;
+
+.botonesRegiones {
+    background-color: white;
+    width: 90%;
+    height: 15%;
+    margin-top: 3%;
+    margin-left: 5%;
+    border-radius: 10px;
+    float: left;
 }
+
 
 /* aca va el estilo del boton amazonas*/
-#amazonas{
-	background-image: url("../img/boton_01.png");
-	background-position: 0% 100%;
-	background-repeat: no-repeat;
-	background-attachment: scroll; /* posicion fija de la tasa*/
-	background-size: 100% 100%; /* tamaño de la imagen*/
-	/*background-color: #DE2345;*/
-}
-/* aca va el estilo del boton andina*/
-#andina{
-	background-image: url("../img/boton_andina.png");
-	background-position: 0% 100%;
-	background-repeat: no-repeat;
-	background-attachment: scroll; /* posicion fija de la tasa*/
-	background-size: 100% 100%; /* tamaño de la imagen*/
-	/*background-color: #DE2345;*/
-}
-/* aca va el estilo del boton caribe*/
-#caribe{
-	background-image: url("../img/boton_caribe.png");
-	background-position: 0% 100%;
-	background-repeat: no-repeat;
-	background-attachment: scroll; /* posicion fija de la tasa*/
-	background-size: 100% 100%; /* tamaño de la imagen*/
-	/*background-color: #DE2345;*/
-}
-/* aca va el estilo del boton insular*/
-#insular{
-	background-image: url("../img/boton_insular.png");
-	background-position: 0% 100%;
-	background-repeat: no-repeat;
-	background-attachment: scroll; /* posicion fija de la tasa*/
-	background-size: 100% 100%; /* tamaño de la imagen*/
-	/*background-color: #DE2345;*/
-}
-/* aca va el estilo del boton orinoquia*/
-#orinoquia{
-	background-image: url("../img/boton_orinoquia.png");
-	background-position: 0% 100%;
-	background-repeat: no-repeat;
-	background-attachment: scroll; /* posicion fija de la tasa*/
-	background-size: 100% 100%; /* tamaño de la imagen*/
-	/*background-color: #DE2345;*/
-}
-/* aca va el estilo del boton pacifico*/
-#pacifico{
-	background-image: url("../img/boton_pacifico.png");
-	background-position: 0% 100%;
-	background-repeat: no-repeat;
-	background-attachment: scroll; /* posicion fija de la tasa*/
-	background-size: 100% 100%; /* tamaño de la imagen*/
-	/*background-color: #DE2345;*/
-}
-/* este es el css donde van la cazerola con el video y el menu*/
-#derecho{
-  	background-image: url("../img/fondo_container_madera2.png");
-  	width: 70%;
-    height: 65%;
-  	margin-top: 1.5%;
-  	margin-left: 1%;
-  	float:left;	
-}
-/* este css es para la cazerola y el video*/
-#containerCazerola{
-	background-image: url("../img/cazuela_sin_fondo.png");
-	background-position: 0% 100%;
-	background-repeat: no-repeat;
-	background-attachment: scroll; /* posicion fija de la tasa*/
-	background-size: 75% 100%; /* tamaño de la imagen*/
-	/*background-color: #DE2345;*/
-	width: 55%;
-	height: 90%;
-	margin-top: 2.5%;
-	margin-left: 8%;
-	float:left;	
 
+#amazonas {
+    background-image: url("../img/boton_01.png");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 100% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
 }
+
+
+/* aca va el estilo del boton andina*/
+
+#andina {
+    background-image: url("../img/boton_andina.png");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 100% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
+}
+
+
+/* aca va el estilo del boton caribe*/
+
+#caribe {
+    background-image: url("../img/boton_caribe.png");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 100% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
+}
+
+
+/* aca va el estilo del boton insular*/
+
+#insular {
+    background-image: url("../img/boton_insular.png");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 100% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
+}
+
+
+/* aca va el estilo del boton orinoquia*/
+
+#orinoquia {
+    background-image: url("../img/boton_orinoquia.png");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 100% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
+}
+
+
+/* aca va el estilo del boton pacifico*/
+
+#pacifico {
+    background-image: url("../img/boton_pacifico.png");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 100% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
+}
+
+
+/* este es el css donde van la cazerola con el video y el menu*/
+
+#derecho {
+    background-image: url("../img/fondo_container_madera2.png");
+    width: 70%;
+    height: 65%;
+    margin-top: 1.5%;
+    margin-left: 1%;
+    float: left;
+}
+
+
+/* este css es para la cazerola y el video*/
+
+#containerCazerola {
+    background-image: url("../img/cazuela_sin_fondo.png");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 75% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
+    width: 55%;
+    height: 90%;
+    margin-top: 2.5%;
+    margin-left: 8%;
+    float: left;
+}
+
+
 /* este css es el que modifica el video en la cazerola*/
-#ubicarVideocazerola{
-	width: 55%;
-	height: 65%;
-	margin-top: 8%;
-	margin-left: 11%;
-	border: 2px solid black;
-	border-radius: 50%;	
+
+#ubicarVideocazerola {
+    width: 55%;
+    height: 65%;
+    margin-top: 8%;
+    margin-left: 11%;
+    border: 2px solid black;
+    border-radius: 50%;
 }
+
 
 /* este css es para el menu y la inf de la region*/
-#containerMenu{
-	background-image: url("../img/MENU.png");
-	background-position: 0% 100%;
-	background-repeat: no-repeat;
-	background-attachment: scroll; /* posicion fija de la tasa*/
-	background-size: 100% 100%; /* tamaño de la imagen*/
-	/*background-color: #DE2345;*/
-	width: 35%;
-	height: 97%;
-	margin-top: 0.6%;
-	font-family: arial:
-	font-size:200%;
-	text-align: justify;
-	border-radius: 10px;
-	float:left;	
+
+#containerMenu {
+    background-image: url("../img/MENU.png");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 100% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
+    width: 35%;
+    height: 97%;
+    margin-top: 0.6%;
+    font-family: arial: font-size: 200%;
+    text-align: justify;
+    border-radius: 10px;
+    float: left;
 }
+
+
 /* este es el estilo del container que tiene el titulo de la region*/
-#tituloRegion{
-	width: 80%;
-	height: 10%;
-	margin-top: 2%;
-	margin-left: 10%;
-	font-family: arial;
-	font-size: 200%;
-	text-align: center;
-	color: blue;
-	float: left;
+
+#tituloRegion {
+    width: 80%;
+    height: 10%;
+    margin-top: 2%;
+    margin-left: 10%;
+    font-family: arial;
+    font-size: 200%;
+    text-align: center;
+    color: blue;
+    float: left;
 }
+
+
 /* este es el estilos del container que tiene la info de la region*/
-#comidaRegion{
-	width: 80%;
-	height: 40%;
-	margin-top: 7%;
-	margin-left: 10%;
-	font-family: arial;
-	font-size: 140%;
-	text-align: center;
-	color: green;
-	float: left;
+
+#comidaRegion {
+    width: 80%;
+    height: 40%;
+    margin-top: 7%;
+    margin-left: 10%;
+    font-family: arial;
+    font-size: 140%;
+    text-align: center;
+    color: green;
+    float: left;
 }
 
 
 /*************************************************************************************************************************************************/
+
+
 /*                                         estilos de css para el footer echo por alejandra duarte                                               */
+
+
 /*************************************************************************************************************************************************/
+
 
 /*DISEÑO FOOTER */
-footer{
+
+footer {
     background-color: #000000;
     width: 100%;
     height: 30%;
-    float:left;
+    float: left;
 }
 
+
 /*CONTAINER*/
-#container{
-    width:20%;
+
+#container {
+    width: 20%;
     height: 30%;
     margin-top: 1%;
     margin-right: 75%;
-    margin-left:2%;
+    margin-left: 2%;
     float: left;
 }
- #containerPrincipal{
-    width:95%;
+
+#containerPrincipal {
+    width: 95%;
     height: 70%;
     margin-left: 3%;
     float: left;
- }
- /*Ajuste tamaño logo e isotipo*/
-
- #imagenlogo{
-    width: 50%;
-    height: 90%;
-    float: left;
-
- }
-
- #imagenisotipo{
-    width: 50%;
-    height: 90%;
-    float: left;
-
 }
- /*Ajuste imagen principal en el footer*/
- .imagenfooter{
-    width:50%;
-    height:100%;
+
+
+/*Ajuste tamaño logo e isotipo*/
+
+#imagenlogo {
+    width: 50%;
+    height: 90%;
+    float: left;
+}
+
+#imagenisotipo {
+    width: 50%;
+    height: 90%;
+    float: left;
+}
+
+
+/*Ajuste imagen principal en el footer*/
+
+.imagenfooter {
+    width: 50%;
+    height: 100%;
     margin: auto;
     float: left;
-    
 }
 
-hr{
+hr {
     width: 80%;
     margin-left: 0.1%;
-  
 }
+
+
 /*Ajuste color, tamaño en la barra de contactenos*/
- #contactenos{
-     width: 25%;
-     height: 85%;
-     font-family: 'Nunito';
-     font-size: 14px;
-     color: white;
-     margin-top: 0.5%;
-     float: left;
+
+#contactenos {
+    width: 25%;
+    height: 85%;
+    font-family: 'Nunito';
+    font-size: 14px;
+    color: white;
+    margin-top: 0.5%;
+    float: left;
 }
+
+
 /*Color iconos*/
-.textoiconos{
-    color:white;
+
+.textoiconos {
+    color: white;
 }
-a{
+
+a {
     font-size: 100%;
 }
+
+
 /*Ajuste color, tamaño en la barra de acceso rapido*/
- #accesoRapido{
+
+#accesoRapido {
     width: 35%;
     height: 75%;
     font-family: 'Nunito';
@@ -287,23 +380,31 @@ a{
     font-size: 88%;
     float: left;
 }
+
+
 /*Tamaño barra regiones*/
-.regiones{
-    width:100%;
+
+.regiones {
+    width: 100%;
     height: 6%;
 }
+
+
 /*Ajuste color, tamaño en la barra de paseo de olla*/
-#paseoDeOlla{
+
+#paseoDeOlla {
     width: 40%;
     height: 85%;
     font-family: 'Nunito';
-    color:white;
+    color: white;
     font-size: 14px;
     margin-top: 0.5%;
     float: left;
 }
+
+
 /*Ajuste para ajustar la descripcion de la barra de paseo de olla*/
-.descripcionPaseoDeOlla{
-    text-align:justify;
-    
+
+.descripcionPaseoDeOlla {
+    text-align: justify;
 }
