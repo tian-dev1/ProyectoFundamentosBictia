@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icono inicial -->
-    <link rel="shortcut icon" href="./img/logosIconos/logoOlla.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/logoOlla.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Estilos CSS Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
     <!-- Estilos CSS Propios -->
     <link rel="stylesheet" href="./css/principal_page.css">
-    <title>Paseo de olla</title>
+    <title>Paseo de olla || Página principal</title>
 </head>
 
 <body>
@@ -23,22 +26,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <img src="./img/logosIconos/LogoFontWhite.svg" height="80px" alt="Logo paseo de olla">
+                        <img src="./img/LogoFontWhite.svg" height="80px" alt="Logo paseo de olla">
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active" style="margin-right: 20px;">
-                            <a class="nav-link" href="#"><img class="icono" src="./img/logosIconos/homeIcon.png" height="20px" alt="Icono home">Bienvenido NombreUsuario <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#"><img class="icono" src="./img/homeIcon.png" height="20px" alt="Icono home">Bienvenido NombreUsuario <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./user_page.html"><img class="icono" src="./img/logosIconos/userCardIcon.png" height="20px" alt="Icono home">Mi perfil</a>
+                            <a class="nav-link" href="./user_page.html"><img class="icono" src="./img/userCardIcon.png" height="20px" alt="Icono home">Mi perfil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img class="icono" src="./img/logosIconos/signOffIcon.png" height="20px" alt="Icono home">Cerrar sesíon</a>
+                            <a class="nav-link" href="#"><img class="icono" src="./img/signOffIcon.png" height="20px" alt="Icono home">Cerrar sesíon</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> <img class="icono" src="./img/logosIconos/phoneIcon.png" height="20px" alt="Icono home">Contactenos</a>
+                            <a class="nav-link" href="#"> <img class="icono" src="./img/phoneIcon.png" height="20px" alt="Icono home">Contactenos</a>
                         </li>
 
                     </ul>
@@ -46,14 +49,105 @@
             </div>
         </nav>
     </div>
+
+    <div id="containerMainRegiones">
+        <div id="ContainerFirstpage">
+            <div id="videoPrincipal">
+                <img id="vidPrincipalOlla" src="" alt="">
+            </div>
+            <aside id="izquierdo">
+                <div class="botonesRegiones" id="amazonas" onmouseenter="escojerRegion(0);"></div>
+                <div class="botonesRegiones" id="andina" onmouseenter="escojerRegion(1);"></div>
+                <div class="botonesRegiones" id="caribe" onmouseenter="escojerRegion(2);"></div>
+                <div class="botonesRegiones" id="insular" onmouseenter="escojerRegion(3);"></div>
+                <div class="botonesRegiones" id="orinoquia" onmouseenter="escojerRegion(4);"></div>
+                <div class="botonesRegiones" id="pacifico" onmouseenter="escojerRegion(5);"></div>
+            </aside>
+            <aside id="derecho">
+                <div id="containerCazerola">
+
+                </div>
+                <div id="containerMenu">
+                    <div id="tituloRegion">
+                        <p> Colombia </p>
+                    </div>
+                    <div id="comidaRegion">
+                        <p> Coolombia cuenta con 6 regiones y la variedad de comida es.......</p>
+                        <button><a href="video.html">ver mas</a></button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small teal pt-4">
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <img class="logosFooter" src="./img/LogoFontWhite.svg" height="80px" alt="Logo paseo de olla" style="margin-top: 10px;">
+                    <p class="parrafo">Paseo de Olla es un portal creado con la finalidad de acercar a nuestros usuarios a la gran variedad gastronómica que existe en Colombia.</p>
+
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mb-md-0 mb-3 column-social">
+
+                    <!-- Content -->
+                    <div class="social">
+                        <a href="https://www.facebook.com/" target="_blank" class="social-link facebook logosFooter"></a>
+                        <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="social-link instagram logosFooter"></a>
+                        <a href="https://twitter.com/" target="_blank" class="social-link twitter logosFooter"></a>
+                        <a href="https://web.whatsapp.com/" target="_blank" class="social-link whatsapp logosFooter"></a>
+                        <a href="https://github.com/tiancamilo01/ProyectoFundamentosBictia" target="_blank" class="social-link github logosFooter"></a>
+
+                    </div>
+                    <p><img src="./img/phoneIcon.png" width="20px" alt="Logo celular"> +13126817074 // +13127660314 </p>
+                    <p><img src="./img/email.png" width="20px" alt="Logo email"> paseodeolla@gmail.com </p>
+
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Text -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center">
+            <p> © 2020 Copyright: <br> Curso fundamentos Bictia
+            </p>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 </body>
 <!-- scripts de bootstrap -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!-- JavaScript propio -->
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 <script src="./js/principal_page.js"></script>
 
 </html>

@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icono inicial -->
-    <link rel="shortcut icon" href="./img/logosIconos/logoOlla.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/logoOlla.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Estilos CSS Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
     <!-- Estilos CSS Propios -->
     <link rel="stylesheet" href="./css/index.css">
-    <title>Paseo de olla</title>
+    <title>Paseo de olla || Home</title>
 </head>
 
 <body>
@@ -26,42 +25,37 @@
         </div>
         <br><br><br><br>
         <div id="banner2">
-            <h3 style="color: whitesmoke; font-family: 'Nunito';">Bienvenidos al más delicioso paseo culinario por los territorios de Colombia saboreando nuestros videos
-                de recetas.</h3> <br>
+            <h3 style="color: whitesmoke; font-family: 'Nunito';">Bienvenidos al más delicioso paseo culinario por los territorios de Colombia saboreando nuestros videos de recetas.</h3> <br>
 
 
 
 
 
-            <div class="container1" >
+            <div class="container1">
                 <!-- Se inserta el boton de inicio sesion -->
-                <button onclick="document.getElementById('id01').style.display='block'"
-                    class="w3-button w3-red w3-large" style="width: 28%; font-family: 'Nunito'">Inicia Sesión</button>
+                <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-red w3-large" style="width: 28%; font-family: 'Nunito'">Inicia Sesión</button>
 
 
                 <div id="id01" class="w3-modal" style="background-color:black;">
                     <div class="w3-modal-content w3-animate-zoom" style="max-width:30%; background-color: black;">
                         <!--                
                         En el action se coloca la pagina a redirigir, pagina a redirigir= action="/action_page.php" -->
-                        <form class="w3-container " >
-                            <img style="margin-left: 20px;"   src="img/isotipo.png" alt="logoletra">
+                        <form class="w3-container ">
+                            <img style="margin-left: 20px;" src="img/isotipo.png" alt="logoletra">
                             <div class="w3-section">
                                 <label style="color: blanchedalmond; font-family: 'Nunito'"><b>Nombre de Usuario</b></label>
-                                <input class="form-control" type="text"
-                                    placeholder="Escriba el nombre de Usuario" id="userName2" required>
+                                <input class="form-control" type="text" placeholder="Escriba el nombre de Usuario" id="userName2" required>
                                 <label style="color: blanchedalmond; font-family: 'Nunito'"><b>Contraseña</b></label>
-                                <input class="form-control" type="password" placeholder="Ingrese Contraseña"
-                                    id="password2" required>
-                                <button class="w3-button w3-block w3-red w3-section w3-padding" type="submit" style="font-family:'Nunito';"
-                                    onclick="signIn()" >Iniciar Sesión</button>
+                                <input class="form-control" type="password" placeholder="Ingrese Contraseña" id="password2" required>
+                                <button class="w3-button w3-block w3-red w3-section w3-padding" type="submit" style="font-family:'Nunito';" onclick="signIn()">Iniciar Sesión</button>
                                 <!--      Funcion de guardar datos  -->
                             </div>
                         </form>
                         <div class="w3-container w3-border-top w3-padding-16">
-                                
-                            <a href="index.html" class="w3-button w3-yellow" style="font-family:'Nunito';">Cancel</a> 
 
-                    </div>
+                            <a href="index.html" class="w3-button w3-yellow" style="font-family:'Nunito';">Cancel</a>
+
+                        </div>
 
                     </div>
                 </div>
@@ -69,49 +63,42 @@
             <br>
             <div class="container1">
                 <!-- Se inserta el boton de registro -->
-                <button onclick="document.getElementById('id02').style.display='block'"
-                    class="w3-button w3-red w3-large" style="width: 29%;font-family: 'Nunito'" >Registrate</button>
+                <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-red w3-large" style="width: 29%;font-family: 'Nunito'">Registrate</button>
 
 
                 <div id="id02" class="w3-modal" style="background-color:black;">
                     <div class="w3-modal-content w3-animate-zoom" style="max-width:50%; background-color: black;">
 
                         <form action="" style="margin-left: 10%;">
-                            <img src="img/isotipo.png"  alt="logoletra">
+                            <img src="img/isotipo.png" alt="logoletra">
                             <p style=" color:whitesmoke;font-family: 'Nunito'">Nombre/s</p>
-                            <input type="text" placeholder="Nombre/s completos" class="form-control"
-                                style="width: 100%;" id='name' required> <br>
+                            <input type="text" placeholder="Nombre/s completos" class="form-control" style="width: 100%;" id='name' required> <br>
                             <p style="color: white;font-family: 'Nunito'">Apellidos</p>
-                            <input type="text" placeholder="Apellidos completos" class="form-control"
-                                style="width: 100%;" id="lastName" required> <br>
+                            <input type="text" placeholder="Apellidos completos" class="form-control" style="width: 100%;" id="lastName" required> <br>
                             <p style="color: white;font-family: 'Nunito'">Email</p>
-                            <input type="text" placeholder="e.g. @gmail.com; @hotmail.com; @outlook.com; etc."
-                                class="form-control" style="width: 100%;" id="email" required> <br>
+                            <input type="text" placeholder="e.g. @gmail.com; @hotmail.com; @outlook.com; etc." class="form-control" style="width: 100%;" id="email" required> <br>
                             <p style="color: white;font-family: 'Nunito'">Nombre de Usuario</p>
-                            <input type="text" placeholder="Caracteres Alfanuméricos" class="form-control"
-                                style="width: 100%;" id="nameUser" required> <br>
+                            <input type="text" placeholder="Caracteres Alfanuméricos" class="form-control" style="width: 100%;" id="nameUser" required> <br>
                             <p style="color: white; font-family: 'Nunito'">Contraseña</p>
-                            <input type="password" placeholder="Caracteres Alfanuméricos" class="form-control"
-                                style="width: 100%;" id="password" required> <br>
-                            <button class="w3-button w3-block w3-red w3-section w3-padding" type="submit" style="font-family:'Nunito';"
-                                onclick="register()">Registrarme</button>
+                            <input type="password" placeholder="Caracteres Alfanuméricos" class="form-control" style="width: 100%;" id="password" required> <br>
+                            <button class="w3-button w3-block w3-red w3-section w3-padding" type="submit" style="font-family:'Nunito';" onclick="register()">Registrarme</button>
                             <div class="w3-container w3-border-top w3-padding-16">
-                                
-                                    <a href="index.html" class="w3-button w3-yellow" style="font-family:'Nunito';">Cancel</a> 
+
+                                <a href="index.html" class="w3-button w3-yellow" style="font-family:'Nunito';">Cancel</a>
 
                             </div>
                         </form>
 
 
-                      
+
                     </div>
                 </div>
             </div>
             <br>
-        <br>
-        <br>
-        <br>
-      
+            <br>
+            <br>
+            <br>
+
         </div>
     </header>
     <!--Fin del Header-->

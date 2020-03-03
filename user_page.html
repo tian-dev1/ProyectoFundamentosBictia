@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="./img/logosIconos/logoOlla.svg" type="image/x-icon">
     <!-- Estilos CSS Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Fuente Nunito -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600&display=swap" rel="stylesheet">
     <!-- Estilos CSS Propios -->
     <link rel="stylesheet" href="./css/user_page.css">
     <title>Paseo de olla</title>
@@ -15,30 +17,31 @@
 
 <body>
     <!-- Container principal de la página -->
+    <!-- Container del NavBar -->
     <div class="container">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-principal">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <img src="./img/logosIconos/LogoFontWhite.svg" height="80px" alt="Logo paseo de olla">
+                        <img src="./img/LogoFontWhite.svg" height="80px" alt="Logo paseo de olla">
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active" style="margin-right: 20px;">
-                            <a class="nav-link" href="#"><img class="icono" src="./img/logosIconos/homeIcon.png" height="20px" alt="Icono home">Bienvenido NombreUsuario <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#"><img class="icono" src="./img/homeIcon.png" height="20px" alt="Icono home">Bienvenido NombreUsuario <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./user_page.html"><img class="icono" src="./img/logosIconos/userCardIcon.png" height="20px" alt="Icono home">Mi perfil</a>
+                            <a class="nav-link" href="./user_page.html"><img class="icono" src="./img/userCardIcon.png" height="20px" alt="Icono home">Mi perfil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img class="icono" src="./img/logosIconos/signOffIcon.png" height="20px" alt="Icono home">Cerrar sesíon</a>
+                            <a class="nav-link" href="#"><img class="icono" src="./img/signOffIcon.png" height="20px" alt="Icono home">Cerrar sesión</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> <img class="icono" src="./img/logosIconos/phoneIcon.png" height="20px" alt="Icono home">Contactenos</a>
+                            <a class="nav-link" href="#"> <img class="icono" src="./img/phoneIcon.png" height="20px" alt="Icono home">Contáctenos</a>
                         </li>
 
                     </ul>
@@ -46,6 +49,106 @@
             </div>
         </nav>
     </div>
+
+    <!--  ENCABEZADO -->
+
+
+    <div id="encabezado_para">
+        <div class="row h-100 ">
+            <div class="col-12 align-self-center">
+                <h1 class="display-4 text-center ">Perfil de Usuario</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--     LOGO ENCABEZADO -->
+
+    <div class="encabezado">
+        <div class="row">
+            <div class="col col-md-12 d-flex justify-content-center">
+                <img src="./img/isotipo.svg" alt="iso_paseo_olla" width="auto">
+            </div>
+        </div>
+    </div>
+
+    <!--   CONTENIDO  -->
+
+    <div class="container text-white py-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 py-4">
+                <div class="text-center">
+                    <img src="./img/user.png" class="rounded" alt="user">
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-8">
+                <h2 class="text-center">Bienvenido <br> estos son tus datos registrados</h2>
+                <hr>
+                <div class="container pl-5">
+                    <table class="table table-striped text-light table-hover">
+                        <tr>
+                            <td>Nombres</td>
+                            <td><input disabled="disabled"></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Apellidos</td>
+                            <td><input disabled="disabled"></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Correo Electrónico</td>
+                            <td><input></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nombre Usuario</td>
+                            <td><input></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Contraseña</td>
+                            <td><input></input>
+                            </td>
+                        </tr>
+                    </table>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block">Modificar datos</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- AVISO LEGAL -->
+    <div class="footer">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-sm-12 col-md-3">
+                    <h5 class="text-center">Contáctenos</h5>
+                    <p>Si tiene algún tipo de inconveniente al diligenciar su perfil de usuario o para registrar cualquier cambio por favor contáctenos.
+                    </p>
+                    <hr>
+                    <p class="text-center">
+                        <ion-icon name="mail-open-outline"></ion-icon>
+                        <p>
+                            </ul>
+                            <h5 class="text-center">soporte@paseodeolla.com</h5>
+                            <hr>
+                </div>
+                <div class="col-sm-12 col-md-7">
+                    <h5 class="text-center">LEY DE HABEAS DATA - Tratamiento de Datos</h5> <br> <br>
+                    <p class="text-center pl-3 pr-4"><span>Sus datos están protegidos mediante la Ley 1581 de 2012, la cual es de carácter general y se aplica en todos los ámbitos de recolección de datos de una persona. </span></p>
+                    <p class="text-center pl-3 pr-4">Usted como usuario tiene el derecho de conocer, actualizar, rectificar y/o eliminar la información que se haya recogido sobre ellos en bases de datos y archivos de nuestra empresa "Paseo de Olla". Por nuestra parte, asumimos el compromiso
+                        de conservarlos de manera segura.</p>
+                    <hr>
+                </div>
+                <div class="col-sm-0 col-md-2 d-flex justify-content-center px-2">
+                    <img src="img/LogoFontWhite.svg" alt="Logo Paseo de Olla" width="auto" height="80px">
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 <!-- scripts de bootstrap -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

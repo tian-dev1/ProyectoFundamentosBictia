@@ -1,3 +1,8 @@
+body {
+    width: 100%;
+    height: 850px;
+}
+
 .navbar-principal {
     background-color: #191919 !important;
 }
@@ -5,4 +10,317 @@
 .icono {
     float: left;
     padding-right: 5px;
+}
+
+.column-social {
+    text-align: center;
+}
+
+.page-footer {
+    background-color: #191919;
+    color: white;
+}
+
+.logosFooter:hover {
+    animation: logosFooter 1s infinite;
+}
+
+#containerMainRegiones {
+    background-color: white;
+    width: 100%;
+    height: 60%;
+    margin-top: 8%;
+    float: left;
+}
+
+
+/* el css que modifica el container de la tarjeta y toda su estructura*/
+
+#ContainerFirstpage {
+    background-image: url("../img/principalPage/fondo_container_menus3.png");
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+
+/*este es el css del video principal*/
+
+#videoPrincipal {
+    background-image: url("../img/principalPage/banner_01.png");
+    width: 85%;
+    height: 23%;
+    margin-top: 1.5%;
+    margin-left: 9%;
+    margin-right: 25%;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 100% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
+    float: left;
+}
+
+
+/*css del video principal, muy necesario*/
+
+#vidPrincipalOlla {
+    width: 50%;
+    height: 50%;
+    float: left;
+    border-radius: 10px;
+}
+
+
+/* esta css es para las caracteristicas del contenedor de los botones que escojen la region*/
+
+#izquierdo {
+    width: 15%;
+    height: 65%;
+    margin-top: 1.5%;
+    margin-left: 8%;
+    float: left;
+}
+
+
+/* este css es para las caracteristicas del contenedor de cada boton*/
+
+.botonesRegiones {
+    background-color: white;
+    width: 90%;
+    height: 15%;
+    margin-top: 3%;
+    margin-left: 5%;
+    border-radius: 10px;
+    float: left;
+}
+
+
+/* aca va el estilo del boton amazonas*/
+
+#amazonas {
+    background-image: url("../img/principalPage/boton_01.png");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 100% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
+}
+
+
+/* aca va el estilo del boton andina*/
+
+#andina {
+    background-image: url("../img/principalPage/boton_andina.png");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 100% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
+}
+
+
+/* aca va el estilo del boton caribe*/
+
+#caribe {
+    background-image: url("../img/principalPage/boton_caribe.png");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 100% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
+}
+
+
+/* aca va el estilo del boton insular*/
+
+#insular {
+    background-image: url("../img/principalPage/boton_insular.png");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 100% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
+}
+
+
+/* aca va el estilo del boton orinoquia*/
+
+#orinoquia {
+    background-image: url("../img/principalPage/boton_orinoquia.png");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 100% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
+}
+
+
+/* aca va el estilo del boton pacifico*/
+
+#pacifico {
+    background-image: url("../img/principalPage/boton_pacifico.png");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 100% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
+}
+
+
+/* este es el css donde van la cazerola con el video y el menu*/
+
+#derecho {
+    /* background-image: url("../img/principalPage/fondo_container_madera2.png"); */
+    width: 70%;
+    height: 65%;
+    margin-top: 1.5%;
+    margin-left: 1%;
+    float: left;
+}
+
+
+/* este css es para la cazerola y el video*/
+
+#containerCazerola {
+    /* background-image: url("../img/principalPage/cazuela_sin_fondo.png"); */
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 75% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
+    width: 55%;
+    height: 90%;
+    margin-top: 2.5%;
+    margin-left: 8%;
+    float: left;
+}
+
+
+/* este css es el que modifica el video en la cazerola*/
+
+#ubicarVideocazerola {
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+
+/* este css es para el menu y la inf de la region*/
+
+#containerMenu {
+    background-image: url("../img/principalPage/MENU.png");
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* posicion fija de la tasa*/
+    background-size: 100% 100%;
+    /* tamaño de la imagen*/
+    /*background-color: #DE2345;*/
+    width: 35%;
+    height: 97%;
+    margin-top: 0.6%;
+    text-align: justify;
+    border-radius: 10px;
+    float: left;
+}
+
+
+/* este es el estilo del container que tiene el titulo de la region*/
+
+#tituloRegion {
+    width: 80%;
+    height: 10%;
+    margin-top: 2%;
+    margin-left: 10%;
+    font-family: arial;
+    font-size: 200%;
+    text-align: center;
+    color: blue;
+    float: left;
+}
+
+
+/* este es el estilos del container que tiene la info de la region*/
+
+#comidaRegion {
+    width: 80%;
+    height: 40%;
+    margin-top: 7%;
+    margin-left: 10%;
+    font-family: arial;
+    font-size: 140%;
+    text-align: center;
+    color: green;
+    float: left;
+}
+
+
+/* Creamos la animación (con keyframes) */
+
+@keyframes logosFooter {
+    25% {
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.0);
+    }
+}
+
+.parrafo {
+    margin-top: 20px;
+}
+
+.social {
+    padding: 20px 0;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: 50px;
+    margin: 0 10px;
+}
+
+.social-link.twitter {
+    background-image: url(../img/twitter.svg);
+}
+
+.social-link.facebook {
+    background-image: url(../img/facebook.svg);
+}
+
+.social-link.github {
+    background-image: url(../img/github.svg);
+}
+
+.social-link.instagram {
+    background-image: url(../img/instagram.svg);
+}
+
+.social-link.whatsapp {
+    background-image: url(../img/whatsapp.png);
+}
+
+.footer-copyright p {
+    padding-bottom: 0.5rem;
+    margin: 0;
 }
