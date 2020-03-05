@@ -32,16 +32,16 @@
                 <form class="form-inline my-2 my-lg-0">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active" style="margin-right: 20px;">
-                            <a class="nav-link" href="#"><img class="icono" src="./img/homeIcon.png" height="20px" alt="Icono home">Bienvenido NombreUsuario <span class="sr-only">(current)</span></a>
+                            <img class="icono" src="./img/homeIcon.png" height="20px" alt="Icono home" style="margin-top: 5px;"><a class="nav-link" id="userNameItem" href="#" style="float: left;">Bienvenido NombreUsuario <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./user_page.html"><img class="icono" src="./img/userCardIcon.png" height="20px" alt="Icono home">Mi perfil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img class="icono" src="./img/signOffIcon.png" height="20px" alt="Icono home">Cerrar sesíon</a>
+                            <a class="nav-link" href="./index.html" onclick="cerrarSesion()"><img class="icono" src="./img/signOffIcon.png" height="20px" alt="Icono home">Cerrar sesíon</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> <img class="icono" src="./img/phoneIcon.png" height="20px" alt="Icono home">Contactenos</a>
+                            <a class="nav-link" href="#footer"> <img class="icono" src="./img/phoneIcon.png" height="20px" alt="Icono home">Contactenos</a>
                         </li>
 
                     </ul>
@@ -72,17 +72,13 @@
                         <p> Colombia </p>
                     </div>
                     <div id="comidaRegion">
-                        <p> Coolombia cuenta con 6 regiones y la variedad de comida es.......</p>
-                        <button><a href="video.html">ver mas</a></button>
+                        <p> Bienvenidos a un fabuloso <b><i>recorrido gastronómico y visual </i></b> de los platos más representativos de cada región de nuestro país.</p>
+                        <button type="button" class="btn btn-danger"><a style="color: white;" href="videos_page.html">ver más</a></button>
                     </div>
                 </div>
             </aside>
         </div>
     </div>
-
-
-
-
 
 
 
@@ -93,15 +89,14 @@
         <div class="container-fluid text-center text-md-left">
 
             <!-- Grid row -->
-            <div class="row">
+            <div id="footer" class="row">
 
                 <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
+                <div class="col-md-6 mt-md-0 mt-3 text-center">
 
                     <!-- Content -->
                     <img class="logosFooter" src="./img/LogoFontWhite.svg" height="80px" alt="Logo paseo de olla" style="margin-top: 10px;">
                     <p class="parrafo">Paseo de Olla es un portal creado con la finalidad de acercar a nuestros usuarios a la gran variedad gastronómica que existe en Colombia.</p>
-
 
                 </div>
                 <!-- Grid column -->
@@ -109,7 +104,7 @@
                 <hr class="clearfix w-100 d-md-none pb-3">
 
                 <!-- Grid column -->
-                <div class="col-md-6 mb-md-0 mb-3 column-social">
+                <div class="col-md-6 mb-md-0 mb-3 text-center">
 
                     <!-- Content -->
                     <div class="social">
@@ -123,7 +118,6 @@
                     <p><img src="./img/phoneIcon.png" width="20px" alt="Logo celular"> +13126817074 // +13127660314 </p>
                     <p><img src="./img/email.png" width="20px" alt="Logo email"> paseodeolla@gmail.com </p>
 
-
                 </div>
                 <!-- Grid column -->
 
@@ -134,7 +128,7 @@
         <!-- Footer Text -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center">
+        <div class="footer-copyright text-center py-3">
             <p> © 2020 Copyright: <br> Curso fundamentos Bictia
             </p>
         </div>
@@ -149,5 +143,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!-- JavaScript propio -->
 <script src="./js/principal_page.js"></script>
+
+<script>
+</script>
 
 </html>

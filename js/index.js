@@ -1,8 +1,8 @@
 var users = []
-//localStorage.setItem("users", JSON.stringify(users));
+    //localStorage.setItem("users", JSON.stringify(users));
 
 function register() {
-     var name = document.getElementById('name').value;
+    var name = document.getElementById('name').value;
     var lastName = document.getElementById('lastName').value
     var email = document.getElementById('email').value;
     email = email.toLowerCase();
@@ -57,32 +57,33 @@ function register() {
 
     }
 
-   
+
 
 }
 
 function signIn() {
 
-    
+
     var userName2 = document.getElementById("userName2").value;
     var password2 = document.getElementById("password2").value;
 
     console.log(userName2, password2);
-    var users = JSON.parse(localStorage.getItem("users")) ;
+    var users = JSON.parse(localStorage.getItem("users"));
     console.log("------", users)
 
-    
+
     for (var i = 0; i < users.length; i++) {
 
         console.log("------>", users[i].userName, " == ", userName2)
         console.log("------>", users[i].password, " == ", password2)
         if (users[i].userName == userName2 && users[i].password == password2) {
-            alert("Bienvenido", userName2);
-        
+            alert(`Bienvenido, ${userName2}`);
+            location.href = "principal_page.html";
 
-       } else {
-           alert("debe registratse "); 
-           //break;
-       }
+
+        } else {
+            alert("debe registratse ");
+            location.href = "index.html";
+        }
     }
 }

@@ -1,3 +1,15 @@
+/* Para mostrar el nombre del usuario en el navbar*/
+var users = JSON.parse(localStorage.getItem("users"));
+document.getElementById("userNameItem").innerHTML = users[0].name + " " + users[0].lastName
+
+
+/* Función Cerrar sesión*/
+function cerrarSesion() {
+    alert("Te esperamos pronto!!");
+}
+
+
+
 /*--------------------------------------------es la funcion que cambia las imagenes de los platos de comida-----------------------------------*/
 var comidasTipicas = ["./img/banner_01.png", "./img/banner_02.png", "./img/banner_03.png", "./img/banner_04.png", "./img/banner_05.png", "./img/banner_06.png"]
 
@@ -29,8 +41,9 @@ var videosRegiones = ["https://www.youtube.com/embed/bnw7OP-jgaI", "https://www.
 ];
 
 var nombreRegion = ["Amazonia", "Andina", "Caribe", "Insular", "Orinoquia", "Pacífico"];
-var infoRegion = ["Pirarucu, Patarasca de pescado, Piraña, Pescado Moqueado, Casabe, Ajicero, Crema de copoazú, Tucupí", "esta region se caracteriza por tener", "esta region se caracteriza por tener",
-    "esta region se caracteriza por tener", "esta region se caracteriza por tener", "esta region se caracteriza por tener"
+var infoRegion = ["La región más exótica de Colombia. Su cocina está marcada por el río Amazonas. Posee diversidad de pescados de río y frutas exóticas.", "Corresponde a la parte central y más extensa del país. Sus platos están marcados por el uso de la papa, el maíz, la carne de res y cerdo en sus recetas.",
+    "Llena de color y sabor, su gastronomía está centrada en productos marinos, acompañados por una amplia variedad de frutas, verduras y legumbres.", "Su gastronomía la protagonizan los frutos del mar, teniendo sus platos gran influencia internacional por los barcos que llegan a nuestras islas.", "La Mamona es su plato más reconocido, como exponente de la calidad y abundancia de carne en nuestros Llanos Orientales",
+    "Sus platos tienen una gran influencia de su herencia africana, hace uso de los pescados de la zona, mezclados con frutas exóticas típicas de la región."
 ];
 /*--------------------------------------------------- creacion del objetoRegiones y almacenamiento de los link---------------------------------*/
 
@@ -94,7 +107,8 @@ function guardarRegion() {
         '</div>' +
         '<div id="comidaRegion">' +
         '<p>' + objetoRegiones.info[p] + '</p>' +
-        '<button>' + '<a href="video.html">' + "ver mas" + '</a>' + '</button>' +
+        '<button type="button" class="btn btn-danger">' + '<a style="color: white;" href="videos_page.html">' + "ver más" + '</a>' + '</button>' +
+
         '</div>' +
         '</div>'
 
@@ -107,8 +121,8 @@ function pararSere(idBoton) {
 
     var cont = [""];
 
-    var cadena = "?rel=0showinfo=0&controls=1&autoplay=1";
-    cont = '<iframe id="ubicarVideocazerola" onmouseout="pararSere(p);" src="' + objetoRegiones.link[p] + "?rel=0showinfo=0&controls=1&autoplay=0" + '" allowed=autoplay >' + '</iframe>'
+    var cadena = "?rel=0showinfo=0&controls=1&autoplay=0";
+    cont = '<iframe id="ubicarVideocazerola" onmouseout="pararSere(p);" src="' + objetoRegiones.link[p] + "?rel=0showinfo=0&controls=0&autoplay=1" + '" allowed=autoplay >' + '</iframe>'
 
     document.getElementById("containerCazerola").innerHTML = cont;
 

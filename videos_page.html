@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icono inicial -->
-    <link rel="shortcut icon" href="./img/logosIconos/logoOlla.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/logoOlla.svg" type="image/x-icon">
     <!-- Estilos CSS Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Estilos CSS Propios -->
@@ -23,22 +23,32 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <img src="./img/logosIconos/LogoFontWhite.svg" height="80px" alt="Logo paseo de olla">
+                        <img src="img/LogoFontWhite.svg" height="80px" alt="Logo paseo de olla">
                     </li>
+                    <li class="nav-item">
+                        <form id="videoComida">
+                            <div class="form-group mx-sm-3 mb-2">
+                                <input type="" class="form-control " id="cancion" placeholder="Buscar">
+                            </div>
+                            <button onclick="buscar()" id="botonBuscar" class="btn btn-danger ">search</button>
+                        </form>
+                    </li>
+
                 </ul>
+
                 <form class="form-inline my-2 my-lg-0">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active" style="margin-right: 20px;">
-                            <a class="nav-link" href="#"><img class="icono" src="./img/logosIconos/homeIcon.png" height="20px" alt="Icono home">Bienvenido NombreUsuario <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#"><img class="icono" src="img/homeIcon.png" height="20px" alt="Icono home">Bienvenido NombreUsuario <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./user_page.html"><img class="icono" src="./img/logosIconos/userCardIcon.png" height="20px" alt="Icono home">Mi perfil</a>
+                            <a class="nav-link" href="./user_page.html"><img class="icono" src="img/userCardIcon.png" height="20px" alt="Icono home">Mi perfil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img class="icono" src="./img/logosIconos/signOffIcon.png" height="20px" alt="Icono home">Cerrar sesíon</a>
+                            <a class="nav-link" href="#"><img class="icono" src="img/signOffIcon.png" height="20px" alt="Icono home">Cerrar sesíon</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> <img class="icono" src="./img/logosIconos/phoneIcon.png" height="20px" alt="Icono home">Contactenos</a>
+                            <a class="nav-link" href="#"> <img class="icono" src="img/phoneIcon.png" height="20px" alt="Icono home">Contactenos</a>
                         </li>
 
                     </ul>
@@ -46,6 +56,81 @@
             </div>
         </nav>
     </div>
+    <div id="containerVideos">
+        <aside id="izquierdo">
+            <div id="video-grande" Class="videoGrande">
+            </div>
+            <div id="likeShare">
+                <div id="likeComida">
+                </div>
+                <div id="like">
+                    <img src="" alt="">
+                </div>
+                <div id="datosLike"> </div>
+                <div id="dislike">
+                    <img src="" alt="">
+                </div>
+                <div id="datosdislike"> </div>
+                <div id="share">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div id="artista">
+                nombre y datos del artista
+            </div>
+            <div id="comentarios">
+                comentarios
+            </div>
+        </aside>
+        <aside id="derecho">
+            <div id="contenedorVideos">
+
+            </div>
+        </aside>
+    </div>
+    <!-- Footer o pie de página -->
+    <div id="footer" class="footer">
+        <div class="container">
+            <div class="row text-white">
+
+                <div class="col-sm-12 col-md-6 text-center">
+                    <div class="social">
+                        <a href="https://www.facebook.com/" target="_blank" class="social-link facebook logosFooter"></a>
+                        <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="social-link instagram logosFooter"></a>
+                        <a href="https://twitter.com/" target="_blank" class="social-link twitter logosFooter"></a>
+                        <a href="https://web.whatsapp.com/" target="_blank" class="social-link whatsapp logosFooter"></a>
+                        <a href="https://github.com/tiancamilo01/ProyectoFundamentosBictia" target="_blank" class="social-link github logosFooter"></a>
+
+                    </div>
+                    <p><img src="./img/phoneIcon.png" width="20px" alt="Logo celular"> +13126817074 // +13127660314 </p>
+                    <p><img src="./img/email.png" width="20px" alt="Logo email"> paseodeolla@gmail.com </p>
+
+                </div>
+                <div class="col-sm-12 col-md-6 text-center">
+                    <img class="logosFooter" src="./img/LogoFontWhite.svg" height="80px" alt="Logo paseo de olla" style="margin-top: 10px;">
+                    <p class="parrafo">Paseo de Olla es un portal creado con la finalidad de acercar a nuestros usuarios a la gran variedad gastronómica que existe en Colombia.</p>
+
+                </div>
+            </div>
+            <br>
+            <div class="row text-white">
+                <div class="col-sm-12 col-md-12 text-center">
+                    <h5 class="text-center">LEY DE HABEAS DATA - Tratamiento de Datos</h5>
+                    <p class="text-center pl-3 pr-4"><span>Sus datos están protegidos mediante la Ley 1581 de 2012, la cual es de carácter general y se aplica en todos los ámbitos de recolección de datos de una persona. </span></p>
+                    <p class="text-center pl-3 pr-4">Usted como usuario tiene el derecho de conocer, actualizar, rectificar y/o eliminar la información que se haya recogido sobre ellos en bases de datos y archivos de nuestra empresa "Paseo de Olla". Por nuestra parte, asumimos el compromiso
+                        de conservarlos de manera segura.</p>
+                    <p> © 2020 Copyright <br> Curso fundamentos Bictia
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/javaScript.js"></script>
 </body>
 <!-- scripts de bootstrap -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
